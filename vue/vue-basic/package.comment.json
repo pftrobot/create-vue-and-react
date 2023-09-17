@@ -1,0 +1,51 @@
+{
+    // 프로젝트명
+    "name": "vue-basic",
+    // 프로젝트 버전
+    "version": "0.1.0",
+    // yarn 명령어들
+    "scripts": {
+      "serve": "vue-cli-service serve",
+      "build": "vue-cli-service build",
+      "lint": "vue-cli-service lint"
+    },
+    // 서비스 작동시 필요한 패키지들
+    "dependencies": {
+      "core-js": "^3.8.3", // 폴리필 패키지
+      "vue": "^3.2.13" // 쀼
+    },
+    // 개발/빌드시 필요한 패키지들
+    "devDependencies": {
+      // 바벨 (크로스브라우징 대응), 린팅 (런타임 오류 픽스용) 패키지들
+      "@babel/core": "^7.12.16",
+      "@babel/eslint-parser": "^7.12.16",
+      "@vue/cli-plugin-babel": "~5.0.0",
+      "@vue/cli-plugin-eslint": "~5.0.0",
+      "@vue/cli-service": "~5.0.0",
+      "eslint": "^7.32.0",
+      "eslint-plugin-vue": "^8.0.3"
+    },
+    // ESLINT 설정 옵션들
+    "eslintConfig": {
+      "root": true,
+      "env": {
+        "node": true
+      },
+      "extends": [
+        "plugin:vue/vue3-essential",
+        "eslint:recommended"
+      ],
+      "parserOptions": {
+        "parser": "@babel/eslint-parser"
+      },
+      "rules": {}
+    },
+    // 허용하는 브라우저 버전들
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "not dead",
+      "not ie 11"
+    ]
+  }
+  
